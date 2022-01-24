@@ -145,7 +145,7 @@ section {
     padding: 100px 0;
 }
 
-.about, .services, .skills {
+.about, .services, .skills, .projects {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -245,16 +245,18 @@ section .title::after {
 
 /* inicio da secção serviços */
 
-.services {
+.services, .projects {
     color: #fff;
     background: #111;
 }
 
-.services .title::before {
+.services .title::before,
+.projects .title::before {
     background: #fff;
 }
 
-.services .title::after {
+.services .title::after, 
+.projects .title::after {
     background: #111;
     content: "o que forneço";
 }
@@ -390,6 +392,116 @@ section .title::after {
 .skills-content .right .mysql::before {
     width: 80%;
 }
+
+/* inicio da seccao projectos */
+
+.projects .title::after {
+    content: "no que trabalhei";
+}
+
+.projects .carousel .card {
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.projects .carousel .card:hover {
+    background: crimson;
+}
+
+.projects .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    transition: all 0.3s ease;
+}
+
+.projects .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.projects .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.projects .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.projects .carousel .card:hover img {
+    border-color: #fff;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3 ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active, 
+.owl-dot:hover {
+    background: crimson!important;
+}
+
+/* inicio da seccao contacto */ 
+
+.contact .title::after {
+    content: "contacte-me";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
