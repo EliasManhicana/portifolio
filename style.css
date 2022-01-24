@@ -319,9 +319,24 @@ section {
         padding: 10px 30px;
     }
 
+    .max-width {
+        max-width: 800px;
+    } 
+
     .about .about-content .column {
-        width: 50%;
+        width: 100%;
     }
+
+    .about .about-content .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .about .about-content .right {
+        flex: 100%;
+    }
+    
 }
 
 @media (max-width: 690px) {
