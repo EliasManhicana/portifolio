@@ -254,7 +254,7 @@ section .title::after {
 
 .services .title::after {
     background: #111;
-    content: "o que eu forneço";
+    content: "o que forneço";
 }
 
 .services .serv-content .card {
@@ -282,10 +282,11 @@ section .title::after {
 .services .serv-content .card i {
     font-size: 50px;
     color: crimson;
+    transition: color 0.3s ease;
 }
 
 .services .serv-content .card:hover i {
-    background: #fff;
+    color: #fff;
 }
 
 .services .serv-content .card .text {
@@ -293,6 +294,8 @@ section .title::after {
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+
+/* inicio da secção competencias */
 
 
 
@@ -394,6 +397,11 @@ section .title::after {
     .about .about-content .right {
         flex: 100%;
     }
+
+    .services .serv-content .card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
     
 }
 
@@ -413,6 +421,10 @@ section .title::after {
     .home .home-content a {
         font-size: 20px;
     }
+
+    .services .serv-content .card {
+        width: 100%
+    }
 }
 
 @media (max-width: 500px) {
@@ -423,6 +435,10 @@ section .title::after {
     .home .home-content .text-3{
         font-size: 27px;
     } 
+
+    .services .serv-content .card {
+        width: 100%
+    }
 }
 
 @media (max-width: 360px) {
@@ -433,4 +449,8 @@ section .title::after {
     .home .home-content .text-3{
         font-size: 22px;
     } 
+
+    .services .serv-content .card {
+        width: 100%
+    }
 }
