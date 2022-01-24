@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
@@ -20,18 +21,22 @@
 
 <body>
 
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
     <!--Menu-->
 
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="">Portifó<span>lio.</span></a></div>
+            <div class="logo"><a href="#home">Portifó<span>lio.</span></a></div>
             <ul class="menu">
-                <li><a href="">Início</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Serviços</a></li>
-                <li><a href="">Competências</a></li>
-                <li><a href="">Projectos</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="#home" class="menu-btn">Início</a></li>
+                <li><a href="#about" class="menu-btn">Sobre</a></li>
+                <li><a href="#services" class="menu-btn">Serviços</a></li>
+                <li><a href="#skills" class="menu-btn">Competências</a></li>
+                <li><a href="#projects" class="menu-btn">Projectos</a></li>
+                <li><a href="#contact" class="menu-btn">Contacto</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -46,7 +51,7 @@
             <div class="home-content">
                 <div class="text-1">Olá, meu nome é</div>
                 <div class="text-2">Elias Manhicana</div>
-                <div class="text-3">Eu sou <span>Programador</span></div>
+                <div class="text-3">Eu sou <span class="typing"></span></div>
                 <a href="#">Contrate-me</a>
             </div>
         </div>
@@ -62,7 +67,7 @@
                     <img src="imagens/perfil-1.jpg" alt="Imagem de Perfil Sobre Mim">
                 </div>
                 <div class="column right">
-                    <div class="text">Eu sou Elias e eu sou <span>Programador</span></div>
+                    <div class="text">Eu sou Elias e eu sou <span class="typing-2"></span></div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, deleniti molestiae! Voluptatum deserunt enim laboriosam explicabo doloremque accusamus natus, est quam fuga quisquam tempore molestias esse, ut officiis, reiciendis dolore odit quae itaque temporibus! Numquam dolore ducimus minus explicabo consectetur, ab ut ad modi quis eius aliquam corporis suscipit eos aliquid excepturi esse, animi obcaecati blanditiis! Delectus ex culpa quisquam!</p>
                     <a href="">Baixe o Meu CV</a>
                 </div>
@@ -318,7 +323,10 @@
 
      <footer>
 
-        <span>Desenvolvido por <a href="#">Elias Manhicana</a> | <span class="far fa-copyright"></span> 2020 Todos direitos reservados.</span>
+        <center>
+            <span>Desenvolvido por <a href="#">Elias Manhicana</a> | <span class="far fa-copyright"></span> 2020 Todos direitos reservados.</span>
+        </center>
+        
 
      </footer>
 
