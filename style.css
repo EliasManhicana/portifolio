@@ -429,7 +429,7 @@ section .title::after {
 }
 
 .skills-content .right .github::before {
-    width: 85%;
+    width: 80%;
 }
 
 /* inicio da seccao projectos */
@@ -578,46 +578,6 @@ footer span a {
 footer span a:hover {
     text-decoration: underline;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* inicio de media responsiva */ 
 
