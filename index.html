@@ -16,6 +16,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
     
 </head>
 
@@ -69,10 +70,28 @@
                 <div class="column right">
                     <div class="text">Eu sou Elias e sou <span class="typing-2"></span></div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, deleniti molestiae! Voluptatum deserunt enim laboriosam explicabo doloremque accusamus natus, est quam fuga quisquam tempore molestias esse, ut officiis, reiciendis dolore odit quae itaque temporibus! Numquam dolore ducimus minus explicabo consectetur, ab ut ad modi quis eius aliquam corporis suscipit eos aliquid excepturi esse, animi obcaecati blanditiis! Delectus ex culpa quisquam!</p>
-                    <a href="docs/CURRICULUM-Elias-Manhicana.pdf" target="_blank">Baixe o Meu CV</a>
+                    <button id="btnSobre">Baixe o Meu CV</button>
                 </div>
             </div>
         </div>
+
+        <!-- The Modal -->
+        <div id="modalSobre" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Sobre Mim</h2>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the Modal Body</p>
+                <p>Some other text...</p>
+            </div>
+            </div>
+        
+        </div>
+
     </section>
 
       <!-- início da secçao servicos  -->
@@ -121,7 +140,7 @@
                 <div class="column left">
                     <div class="text">Minhas competências criativas & experiências.</div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, eum rem omnis corrupti dicta asperiores quas error tempore esse autem, tenetur delectus quia quo voluptates totam excepturi mollitia consequuntur labore harum accusamus assumenda rerum deserunt nostrum!</p>
-                    <a href="#skills">Saiba Mais</a>
+                   
                 </div>
 
                 <div class="column right">
@@ -337,3 +356,31 @@
 </body>
 
 </html>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("modalSobre");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("btnSobre");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+</script>
